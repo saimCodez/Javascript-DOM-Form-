@@ -1,0 +1,200 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.Form {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 28px 25px;
+  border-radius: 20px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.15),
+    0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.Form h1 {
+  text-align: center;
+  margin-bottom: 22px;
+  color: #111827;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  color: #374151;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 12px;
+  outline: none;
+  font-size: 0.95rem;
+  background: #f9fafb;
+  transition: all 0.3s ease;
+}
+
+.input-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border-color: #dc2626;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.12);
+}
+
+#submitbtn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 12px;
+  background: #dc2626;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#submitbtn:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(220, 38, 38, 0.25);
+}
+
+#submitbtn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+    align-items: flex-start;
+    padding-top: 25px;
+  }
+
+  .Form {
+    max-width: 100%;
+    padding: 24px 20px;
+    border-radius: 18px;
+  }
+
+  .Form h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .input-group {
+    margin-bottom: 14px;
+  }
+
+  .input-group input,
+  .input-group textarea,
+  #submitbtn {
+    padding: 12px;
+  }
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 12px 48px 12px 14px; /* Space for the eye icon */
+    border: 1.5px solid #d1d5db;
+    border-radius: 12px;
+    outline: none;
+    font-size: 0.95rem;
+    background: #f9fafb;
+    transition: all 0.3s ease;
+}
+
+.password-container input::placeholder {
+    color: #9ca3af;
+}
+
+.password-container input:focus {
+    border-color: #dc2626;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.12);
+}
+
+/* Eye Icons */
+.eye-icon-open,
+.eye-icon-close {
+    position: absolute;
+    right: 15px;
+    top: calc(50% + 14px); /* Pushes icon down to align with input, not label */
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    color: #6b7280;
+    transition: all 0.3s ease;
+}
+
+.eye-icon-open:hover,
+.eye-icon-close:hover {
+    color: #dc2626;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Initially hide the open-eye icon */
+.eye-icon-open {
+    display: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.Form {
+    width: 100vh;
+    max-width: 550px;   /* Big form */
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.15),
+        0 5px 15px rgba(0, 0, 0, 0.08);
+}
+

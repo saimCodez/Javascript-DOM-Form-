@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dom Practice Web</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+  </head>
+  <body>
+    <form>
+      <div class="Form">
+        <h1>Login Form</h1>
+
+        <div class="input-group">
+          <label for="name">Name:</label>
+          <input type="text" placeholder="Saim" id="name" />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="text" placeholder="saim@example.com" id="email" />
+        </div>
+
+        <div class="input-group">
+          <div class="password-container">
+            <label for="password">Password:</label>
+            <input type="password" placeholder="saim123" id="password" />
+            <span class="eye-icon-open" id="openeye" onclick="SetIcon(this)"
+              >👁️</span
+            >
+            <span class="eye-icon-close" id="closeeye" onclick="SetIcon(this)"
+              >🙈</span
+            >
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" placeholder="saim123" id="confirm-password" />
+        </div>
+
+        <div class="input-group">
+          <label for="address">Address:</label>
+          <textarea
+            placeholder="latifabad unit 5 block C house no 59"
+            id="address"
+          ></textarea>
+        </div>
+
+        <div class="input-group">
+          <label for="contact">Contact:</label>
+          <input type="tel" placeholder="+92 3123456789" id="contact" />
+        </div>
+
+        <button type="submit" onclick="Submit()" id="submitbtn">Submit</button>
+      </div>
+    </form>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
